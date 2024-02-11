@@ -20,4 +20,7 @@ void SetToZero(short **val)
     *(*val) = 0;            //First element of first array
     *(*(val)+1) = 0;        //Pointer arithmetic - second element of first array
     *(*(val)+2) = 0;        //3rd element of first array
+
+    *(*(val+1)) = 0;
+    *(*(val+1)+1) = 0;
 }
